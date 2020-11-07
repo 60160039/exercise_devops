@@ -10,6 +10,11 @@ app.get('/', (req, res) => {
     return res.send('Hello!')
 })
 
+app.get('/item', (req, res) => {
+    return res.send(item)
+})
+
+
 app.listen(port, () => {
     console.log(`Start Express application at ${port}`)
 })
